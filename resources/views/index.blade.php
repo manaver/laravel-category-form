@@ -24,6 +24,12 @@
             margin-top: 50px;
         }
 
+        @media screen and (max-width: 550px) {
+            .displayBox {
+                width: 90%;
+            }
+        }
+
         .form-group {
             margin-bottom: 5px;
         }
