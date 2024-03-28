@@ -2,7 +2,7 @@
     @foreach ($categories as $category)
         @if ($category->childrens->isNotEmpty())
             <details style="margin: 5px">
-                <summary>
+                <summary class="expand-category">
                     {{ $category->name }}
                 </summary>
                 @include('components.show-childs', [
@@ -10,7 +10,7 @@
                 ])
             </details>
         @else
-            <p>{{ $category->name }}</p>
+            <p style="margin: 5px;">📄{{ $category->name }}</p>
         @endif
     @endforeach
 </div>
